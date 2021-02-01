@@ -1,0 +1,16 @@
+h1 number
+
+= form_with model: [@sudoku, @number] do |f|
+  div
+    = f.label :true_number
+    = f.number_field :true_number
+  div
+    = f.label :suggested_number
+    = f.number_field :suggested_number
+  div
+    = f.label "arr_1"
+    = f.number_field :arr_1
+  div
+    = f.label :arr_2, "poop"
+    = f.number_field :arr_2
+  = f.submit
